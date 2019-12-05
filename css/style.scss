@@ -128,7 +128,7 @@ body {
     background: #b65027;
   }
   
-  footer {
+  #footer {
     background: #b65027;
     border-bottom: 10px solid #7b8284;
     border-top: 10px solid #7b8284;
@@ -138,6 +138,11 @@ body {
     width: 124.75%;
   }
   
+  #copy {
+    background: #b65027;
+    width: 100%;
+  }
+
   /* #myjumbotron {
       top: 100px;
       position: relative;
