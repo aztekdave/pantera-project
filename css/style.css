@@ -14,7 +14,7 @@ body {
   top: 50%;
   z-index: 1;
   margin: 200px 0 0 -125px;
-  background: url("/images/wheel3.png");
+  background: url("images/wheel3.png");
   width: 256px;
   height: 256px;
   -webkit-animation: spin 2s linear infinite;
