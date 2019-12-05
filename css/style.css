@@ -102,7 +102,7 @@ body {
 }
 
 ul {
-  margin-left: 6.25rem;
+  margin-left: 13%;
 }
 
 li.nav-item {
@@ -131,8 +131,8 @@ a.nav-link {
   border-top: 10px solid #7b8284;
   color: #e2ebea;
   padding: 15px;
-  margin-left: -135px;
-  width: 124.75%;
+  margin-left: -225px;
+  width: 140%;
 }
 
 #copy {
@@ -183,7 +183,7 @@ img.inner-switch {
   position: relative;
   /* width: 100%; */
   /* right: 200px; */
-  right: 34%;
+  right: 29%;
 }
 
 h1.display-2 {
@@ -194,7 +194,7 @@ img#car {
   width: 50%;
   height: auto;
   position: relative;
-  left: 40%;
+  left: 35%;
   bottom: 180px;
 }
 
@@ -322,21 +322,6 @@ img#car {
 }
 
 /********************************** Logo end *****************************/
-.ui-tooltip {
-  background: black;
-  border: 5px solid white;
-}
-
-.ui-tooltip {
-  padding: 10px 20px;
-  color: white;
-  border-radius: 10px;
-  font: bold 14px "Helvetica Neue", Sans-Serif;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0 0 7px black;
-          box-shadow: 0 0 7px black;
-}
-
 /* .myImgs {
       filter: grayscale(100%);
       transition: filter 2s;
