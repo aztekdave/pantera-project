@@ -6,7 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pantera Project</title>
 </head>
-<body>
-    
+<body onload="myFunction()" style="margin:0 auto;">
+
+    <!-------------------------------------------- Preloader ----------------------------------------------------->
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+<!------------------------------------------- Navigation starts here  -------------------------------------------->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation" role="navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background:#b65027;">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#history">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#myCarousel">Gallery</a>
+                </li>
+                <li class="switch nav-item" style="margin-left: 500px; background:#b65027;">
+                    <span class="dark h4 nav-item" style="color:rgba(255,255,255,1);background:#b65027;">Dark
+                        mode:</span><img class="inner-switch" src="images/moon.png" alt="moon">
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!------------------------------------------- Navigation ends here  -------------------------------------------->
+ 
+<!------------------------- Logo start --------------------------------->
+<h1 class="container display-2" id="home" style="padding-top:104px;">De Tomaso Pantera</h1>
+<div class="logo container">
+    <div id="webpage">
+        <div id="leftcolor"></div>
+        <img id="logo" src="/images/logo.png" alt="Logo">
+        <div id="rightcolor">
+        </div>
+    </div>
+</div>
+<div class="car"><img id="car" src="/images/detomaso-pantera.png"></div>
+<!-------------------------- Logo end ----------------------------------->
+
 </body>
 </html>
