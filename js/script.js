@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
 
 
- // Navbar collapse
+// Navbar collapse
 $('.navbar-collapse').on('click', function (){
 
     $('.navbar-collapse').collapse('hide');
@@ -51,21 +51,21 @@ $('.navbar-nav>li>a').on('click', function () {
 
 
 // JQuery Tooltip
-$( function() {
-    $( document ).tooltip({
-      position: {
-        my: "center bottom-20",
-        at: "center top",
-        using: function( position, feedback ) {
-          $( this ).css( position );
-          $( "<div>" )
-            .addClass( feedback.vertical )
-            .addClass( feedback.horizontal )
-            .appendTo( this );
-        }
-      }
-    });
-  } );
+// $( function() {
+//     $( document ).tooltip({
+//       position: {
+//         my: "center bottom-20",
+//         at: "center top",
+//         using: function( position, feedback ) {
+//           $( this ).css( position );
+//           $( "<div>" )
+//             .addClass( feedback.vertical )
+//             .addClass( feedback.horizontal )
+//             .appendTo( this );
+//         }
+//       }
+//     });
+//   } );
 
 // Document.ready ends here
 });
