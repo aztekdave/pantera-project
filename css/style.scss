@@ -370,13 +370,6 @@ body {
     color: #000;
   }
   
-  #myForm {
-    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    color: #000;
-    border-top: 1px solid #000;
-    padding: 2em;
-  }
-  
   #myCarousel {
     padding-top: 20px;
   }
@@ -392,11 +385,24 @@ body {
   .carousel-control-next,
   .carousel-control-prev {
     opacity: 1;
+    background: initial;
   }
+
+.carousel-caption {
+  background: initial;
+}
+.carousel-caption h5 {
+  background: initial;
+}
+
+.carousel-indicators {
+  background: initial;
+}
+
   .carousel-control-next-icon, .carousel-control-prev-icon  {
-    color: #000;
     height: 50px;
     width: 30px;
+    // background: initial;
   }
   
   @media screen and (max-width:320px) {

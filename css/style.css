@@ -363,14 +363,6 @@ section#card-section {
   color: #000;
 }
 
-#myForm {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e7e9), color-stop(99%, #e3eeff), to(#e3eeff));
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-  color: #000;
-  border-top: 1px solid #000;
-  padding: 2em;
-}
-
 #myCarousel {
   padding-top: 20px;
 }
@@ -384,10 +376,22 @@ section#card-section {
 .carousel-control-next,
 .carousel-control-prev {
   opacity: 1;
+  background: initial;
+}
+
+.carousel-caption {
+  background: initial;
+}
+
+.carousel-caption h5 {
+  background: initial;
+}
+
+.carousel-indicators {
+  background: initial;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-  color: #000;
   height: 50px;
   width: 30px;
 }
