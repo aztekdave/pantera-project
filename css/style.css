@@ -102,7 +102,7 @@ body {
 }
 
 ul {
-  margin-left: 13%;
+  margin-left: 7%;
 }
 
 li.nav-item {
@@ -131,8 +131,10 @@ a.nav-link {
   border-top: 10px solid #7b8284;
   color: #e2ebea;
   padding: 15px;
-  margin-left: -225px;
-  width: 140%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 #copy {
@@ -183,7 +185,7 @@ img.inner-switch {
   position: relative;
   /* width: 100%; */
   /* right: 200px; */
-  right: 29%;
+  right: 34%;
 }
 
 h1.display-2 {
@@ -194,7 +196,7 @@ img#car {
   width: 50%;
   height: auto;
   position: relative;
-  left: 35%;
+  left: 40%;
   bottom: 180px;
 }
 
@@ -240,7 +242,7 @@ img#car {
   z-index: 3;
 }
 
-#logo {
+#t-logo {
   position: absolute;
   left: 80px;
   top: 90px;

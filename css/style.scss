@@ -105,7 +105,7 @@ body {
   }
   
   ul {
-    margin-left: 13%;
+    margin-left: 7%;
   }
   
   li.nav-item {
@@ -134,10 +134,13 @@ body {
     border-top: 10px solid #7b8284;
     color: #e2ebea;
     padding: 15px;
-    margin-left: -225px;
-    
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    // margin-left: -225px;
     // width: 124.75%;
-    width: 140%;
+    // width: 140%;
     // width: 100vw;
   }
   
@@ -198,7 +201,7 @@ body {
     position: relative;
     /* width: 100%; */
     /* right: 200px; */
-    right: 29%;
+    right: 34%;
   }
   
   h1.display-2 {
@@ -209,7 +212,7 @@ body {
     width: 50%;
     height: auto;
     position: relative;
-    left: 35%;
+    left: 40%;
     bottom: 180px;
   }
   
@@ -252,7 +255,7 @@ body {
     z-index: 3;
   }
   
-  #logo {
+  #t-logo {
     position: absolute;
     left: 80px;
     top: 90px;
