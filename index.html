@@ -23,6 +23,87 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
         integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<!---- Style for modal ----->
+<style>
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#myImg:hover {opacity: 0.5;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 110px;
+  width: 65%;
+  height: 85%;
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255,255,255,1); /* Black w/ opacity */
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 2.6s;
+  animation-name: zoom;
+  animation-duration: 2.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #444;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#mountain {
+padding: 0 0 0 25px;
+text-align: center;
+}
+
+hr {
+margin-bottom: 15px;
+}
+</style>
 </head>
 
 <body onload="myFunction()" style="margin:0 auto;">
@@ -125,7 +206,7 @@
                 <div class="col-md-4">
                     <figure>
                         <a href="#about" title="1972 De Tomaso Pantera"><img src="images/Pantera-Red.jpg"
-                                class="myImgs img-fluid img-thumbnail"></a>
+                                class="myImgs img-fluid img-thumbnail" id="myImg"></a> <!--added id myImg-->
                         <figcaption>Ford had sought a racing and production car partnership with Ferrari, but was denied
                             the opportunity. Ford produced the GT40 race car in order to humiliate Enzo Ferrari on the
                             race track and partnered with Alejandro De Tomaso to produce an exotic Italian sports car
@@ -134,6 +215,14 @@
                         </figcaption>
                     </figure>
                 </div>
+<!-- The Modal start-->
+<div id="myModal" class="modal">
+    <h1 id="mountain">1972 De Tomaso Pantera</h1>
+    <span class="close">&times;</span>
+    <hr>
+    <img class="modal-content" id="img01">
+  </div>
+<!-- The Modal end-->
 
                 <div class="col-md-4">
                     <figure>
@@ -566,6 +655,30 @@
                 /*Preloader End*/
             </script>
             <script src="js/script.js"></script>
+            
+            <!-- Modal script   -->
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                  modal.style.display = "none";
+                }
+                </script>
 </body>
 
 </html>
