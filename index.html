@@ -23,96 +23,15 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
         integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-<!---- Style for modal ----->
-<style>
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.7s;
-}
-
-#myImg:hover {opacity: 0.5;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 10px; /* Location of the box */
-  left: 0;
-  top: 110px;
-  width: 65%;
-  height: 85%;
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(255,255,255,1); /* Black w/ opacity */
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  border-radius: 5px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 2.6s;
-  animation-name: zoom;
-  animation-duration: 2.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #444;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#mountain {
-padding: 0 0 0 25px;
-text-align: center;
-}
-
-hr {
-margin-bottom: 15px;
-}
-</style>
 </head>
 
 <body onload="myFunction()" style="margin:0 auto;">
 
-    <!-------------------------------------------- Preloader ----------------------------------------------------->
+<!-------------------------------------------- Preloader ----------------------------------------------------->
     <div id="loader"></div>
     <div style="display:none;" id="myDiv" class="animate-bottom">
 
-        <!------------------------------------------- Navigation starts here  -------------------------------------------->
+<!------------------------------------------- Navigation starts here  -------------------------------------------->
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation" role="navigation">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -134,10 +53,6 @@ margin-bottom: 15px;
                         <li class="nav-item">
                             <a class="nav-link h4" href="#myCarousel">Gallery</a>
                         </li>
-                        <!-- <li class="switch nav-item" style="margin-left: 36rem; background:#b65027;">
-                            <span class="dark h4 nav-item" style="color:rgba(255,255,255,1);background:#b65027;">Dark
-                                mode:</span><img class="inner-switch" src="images/moon.png" alt="moon">
-                        </li> -->
                     </ul>
                     <nav class="switch navbar navbar-brand" style="background:#b65027;">
                         <span class="dark h4 nav-item" style="color:rgba(255,255,255,1);background:#b65027;">Dark
@@ -146,9 +61,9 @@ margin-bottom: 15px;
                 </div>
             </nav>
         </header>
-        <!------------------------------------------- Navigation ends here  -------------------------------------------->
+<!------------------------------------------- Navigation ends here  -------------------------------------------->
 
-        <!------------------------- Logo start --------------------------------->
+<!------------------------- Logo start --------------------------------->
         <h1 class="container display-2" id="home" style="padding-top:104px;">De Tomaso Pantera</h1>
         <div class="logo container">
             <div id="webpage">
@@ -159,12 +74,12 @@ margin-bottom: 15px;
             </div>
         </div>
         <div class="car"><img id="car" src="images/detomaso-pantera.png"></div>
-        <!-------------------------- Logo end ----------------------------------->
+<!-------------------------- Logo end ----------------------------------->
 
 
 
 
-        <!----------------------------------- History starts here ------------------------------------------------------->
+<!----------------------------------- History starts here ------------------------------------------------------->
         <h1 class="container display-2" id="history" style="padding-top:104px;">History</h1>
 
         <div class="container">
@@ -197,318 +112,220 @@ margin-bottom: 15px;
                 </div>
             </div>
         </div>
-        <!----------------------------------- History ends here ------------------------------------------------------->
+<!----------------------------------- History ends here ------------------------------------------------------->
 
-        <!------------------------------------- About section starts here ----------------------------------->
+<!------------------------------------- About section starts here ----------------------------------->
         <div class="container" id="about" style="padding-top:104px;">
             <h1 class="display-2">About</h1>
             <div class="row">
+                <!--First row-->
+                <!-- Modal trigger 1 -->
                 <div class="col-md-4">
                     <figure>
-                        <a href="#about" title="1972 De Tomaso Pantera"><img src="images/Pantera-Red.jpg"
-                                class="myImgs img-fluid img-thumbnail" id="myImg"></a> <!--added id myImg-->
-                        <figcaption>Ford had sought a racing and production car partnership with Ferrari, but was denied
-                            the opportunity. Ford produced the GT40 race car in order to humiliate Enzo Ferrari on the
-                            race track and partnered with Alejandro De Tomaso to produce an exotic Italian sports car
-                            with an American V8 for power. The Pantera was sold in the US at Lincoln-Mercury
-                            dealerships.
+                        <img src="images/Pantera-Red.jpg" class="myImgs img-fluid img-thumbnail" data-toggle="modal"
+                            data-target="#myModal1">
+                        <figcaption>
+                            <p class="paraBlack">Ford had sought a racing and production car partnership with
+                                Ferrari, but
+                                was denied the opportunity. Ford produced the GT40 race car in order to
+                                humiliate Enzo
+                                Ferrari on the race track and partnered with Alejandro De Tomaso to produce an
+                                exotic
+                                Italian sports car with an American V8 for power. The Pantera was sold in the US
+                                at
+                                Lincoln-Mercury dealerships.</p>
                         </figcaption>
                     </figure>
                 </div>
-<!-- The Modal start-->
-<div id="myModal" class="modal">
-    <h1 id="mountain">1972 De Tomaso Pantera</h1>
-    <span class="close">&times;</span>
-    <hr>
-    <img class="modal-content" id="img01">
-  </div>
-<!-- The Modal end-->
+                <!-- Modal Window 1 -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel1">1971 De Tomaso Pantera</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Pantera-Red.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Modal trigger 2-->
                 <div class="col-md-4">
                     <figure>
-                        <a href="#about" title="1973 De Tomaso Pantera"><img src="images/Pantera-Blue-1973.jpg"
-                                class="myImgs img-fluid img-thumbnail"></a>
-                        <figcaption>An unbeatable combination of Italian styling and American horsepower. The 1971
-                            Pantera featured a Ford 351 Cleveland V8 engine, which produced 326hp and a top speed of 159
-                            mph. The car was produced for more than 20 years selling more than 7,500 units.
+                        <img src="images/Pantera-Blue-1973.jpg" class="myImgs  img-fluid img-thumbnail"
+                            data-toggle="modal" data-target="#myModal2">
+                        <figcaption>
+                            <p class="paraBlack">An unbeatable combination of Italian styling and American
+                                horsepower. The
+                                1971 Pantera featured a Ford 351 Cleveland V8 engine, which produced 326hp and a
+                                top speed
+                                of 159 mph. The car was produced for more than 20 years selling more than 7,500
+                                units.</p>
                         </figcaption>
                     </figure>
                 </div>
+                <!-- Modal Window 2 -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel2">1973 De Tomaso Pantera</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Pantera-Blue-1973.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Modal Trigger 3 -->
                 <div class="col-md-4">
                     <figure>
-                        <a href="#about" title="De Tomaso Pantera GT5"><img src="images/De-Tomaso-Pantera-GT5-1984.jpg"
-                                class="myImgs img-fluid img-thumbnail"></a>
-                        <figcaption>After losing the backing of Ford, De Tomaso continued to improve the performance and
-                            luxury of the Pantera. 1980 saw the introduction of the GT5 model which included fiberglass
-                            wheel arch extensions with exposed rivet fastening system.
+                        <img src="images/De-Tomaso-Pantera-GT5-1984.jpg" class="myImgs  img-fluid img-thumbnail"
+                            data-toggle="modal" data-target="#myModal3">
+                        <figcaption>
+                            
+                                <p><p class="paraBlack">After losing the backing of Ford, De Tomaso continued to
+                                        improve the
+                                        performance and luxury of the Pantera. 1980 saw the introduction of the GT5
+                                        model which
+                                        included fiberglass wheel arch extensions with exposed rivet fastening system.
+                                    </p></p>
                         </figcaption>
                     </figure>
                 </div>
+                <!-- Modal Window 3 -->
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel3">1984 De Tomaso Pantera GT5</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/De-Tomaso-Pantera-GT5-1984.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="container" style="padding-top:84px;"> -->
+            <!--First row end-->
 
-            <div class="row">
+            <div class="row"><!--Second row start-->
+                <!-- Modal Trigger 4 -->
                 <div class="col-md-4">
                     <figure>
-                        <a href="#about" title="1984 De Tomaso Pantera GT5 S"><img
-                                src="images/De Tomaso Pantera GT5 S.jpeg" class="myImgs img-fluid img-thumbnail"></a>
-                        <figcaption>By 1984, the GT5 S was introduced, removing the rivets from the wheel arch
-                            extensions, providing a much cleaner look. Horsepower was increased to 350hp with the
-                            top speed now at 174 mph..
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="col-md-4">
-                    <figure>
-                        <a href="#about" title="De Tomaso Pantera Interior"><img src="images/Pantera_Interior.JPG"
-                                class="myImgs img-fluid img-thumbnail"></a>
-                        <figcaption>Reflecting its makers transatlantic ambitions, the Pantera came with an
-                            abundance of standard features which appeared exotic to European car buyers, such as
-                            electric windows, air conditioning and even "doors that buzz when open."
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="col-md-4">
-                    <figure>
-                        <a href="#about" title="1990 De Tomaso Pantera 90 Si"><img
-                                src="images/De-Tomaso-Pantera-Si-Targa.jpg" class="myImgs img-fluid img-thumbnail"></a>
-                        <figcaption>The Pantera was reesigned for the 1990 model year as the 90 Si. The supply of
-                            Ford 351 V8's had been exhausted and De Tomaso opted for a Ford 302 V8 as the
-                            replacement. Ultimately, only 38 of the 90 Si models were sold when production ended in
-                            1993.
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <!--------------------------------------- About section ends here ----------------------------------->
-
-            <!-- ---------------------------------- Modal starts here ----------------------------------------------------->
-            <h1 class="container display-2" id="about" style="padding-top:104px; clear: both;">About</h1>
-
-            <!-- Modal Window 1 -->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel1">1971 De Tomaso Pantera</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/Pantera-Red.jpg" class="img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Window 2 -->
-            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel2">1973 De Tomaso Pantera</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/Pantera-Blue-1973.jpg" class="img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Window 3 -->
-            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel3">De Tomaso Pantera GT5 S</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/De Tomaso Pantera GT5 S.jpeg" class="img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Window 4 -->
-            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel4">1984 De Tomaso Pantera GT5</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/De-Tomaso-Pantera-GT5-1984.jpg" class="img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Window 5 -->
-            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel5">De Tomaso Pantera Interior</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/Pantera_Interior.JPG" class="img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Window 6 -->
-            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel6">De Tomaso Pantera 90 Si</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/De-Tomaso-Pantera-Si-Targa.jpg" class="img-fluid">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal Trigger 1 -->
-            <div class="container" style="background:#fff; height:100%;">
-                <div class="row pt-4">
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="images/Pantera-Red.jpg" class="myImgs img-fluid img-thumbnail" data-toggle="modal"
-                                data-target="#myModal1">
-                            <figcaption>
-                                <p class="paraBlack">Ford had sought a racing and production car partnership with
-                                    Ferrari, but
-                                    was denied the opportunity. Ford produced the GT40 race car in order to
-                                    humiliate Enzo
-                                    Ferrari on the race track and partnered with Alejandro De Tomaso to produce an
-                                    exotic
-                                    Italian sports car with an American V8 for power. The Pantera was sold in the US
-                                    at
-                                    Lincoln-Mercury dealerships.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- Modal Trigger 2 -->
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="images/Pantera-Blue-1973.jpg" class="myImgs  img-fluid img-thumbnail"
-                                data-toggle="modal" data-target="#myModal2">
-                            <figcaption>
-                                <p class="paraBlack">An unbeatable combination of Italian styling and American
-                                    horsepower. The
-                                    1971 Pantera featured a Ford 351 Cleveland V8 engine, which produced 326hp and a
-                                    top speed
-                                    of 159 mph. The car was produced for more than 20 years selling more than 7,500
-                                    units.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- Modal Trigger 3 -->
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="images/De Tomaso Pantera GT5 S.jpeg" class="myImgs  img-fluid img-thumbnail"
-                                data-toggle="modal" data-target="#myModal3">
-                            <figcaption>
-                                <p class="paraBlack">After losing the backing of Ford, De Tomaso continued to
-                                    improve the
-                                    performance and luxury of the Pantera. 1980 saw the introduction of the GT5
-                                    model which
-                                    included fiberglass wheel arch extensions with exposed rivet fastening system.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- Modal Trigger 4 -->
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="images/De-Tomaso-Pantera-GT5-1984.jpg" class="myImgs  img-fluid img-thumbnail"
-                                data-toggle="modal" data-target="#myModal4">
-                            <figcaption>
+                        <img src="images/De Tomaso Pantera GT5 S.jpeg" class="myImgs  img-fluid img-thumbnail"
+                            data-toggle="modal" data-target="#myModal4">
+                        <figcaption>
                                 <p class="paraBlack">By 1984, the GT5 S was introduced, removing the rivets from the
-                                    wheel arch
-                                    extensions, providing a much cleaner look. Horsepower was increased to 350hp
-                                    with the top
-                                    speed now at 174 mph.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- Modal Trigger 5 -->
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="images/Pantera_Interior.JPG" class="myImgs  img-fluid img-thumbnail"
-                                data-toggle="modal" data-target="#myModal5">
-                            <figcaption>
-                                <p class="paraBlack">Reflecting its makers transatlantic ambitions, the Pantera came
-                                    with an
-                                    abundance of standard features which appeared exotic to European car buyers,
-                                    such as
-                                    electric windows, air conditioning and even "doors that buzz when open."</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <!-- Modal Trigger 6 -->
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="images/De-Tomaso-Pantera-Si-Targa.jpg" class="myImgs  img-fluid img-thumbnail"
-                                data-toggle="modal" data-target="#myModal6">
-                            <figcaption>
-                                <p class="paraBlack">The Pantera was reesigned for the 1990 model year as the 90 Si.
-                                    The supply
-                                    of Ford 351 V8's had been exhausted and De Tomaso opted for a Ford 302 V8 as the
-                                    replacement. Ultimately, only 38 of the 90 Si models were sold when production
-                                    ended in
-                                    1993.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
+                                        wheel arch
+                                        extensions, providing a much cleaner look. Horsepower was increased to 350hp
+                                        with the top
+                                        speed now at 174 mph.</p>
+                        </figcaption>
+                    </figure>
                 </div>
-            </div>
-            <!------------------------------------------ Modal ends here -------------------------------------------------->
+                <!-- Modal Window 4 -->
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel4">De Tomaso Pantera GT5 S</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/De Tomaso Pantera GT5 S.jpeg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!------------------------------------------- Carousel starts here -------------------------------------------->
+                <!-- Modal Trigger 5 -->
+                <div class="col-md-4">
+                    <figure>
+                        <img src="images/Pantera_Interior.JPG" class="myImgs  img-fluid img-thumbnail"
+                            data-toggle="modal" data-target="#myModal5">
+                        <figcaption>
+                            <p class="paraBlack">Reflecting its makers transatlantic ambitions, the Pantera came
+                                with an
+                                abundance of standard features which appeared exotic to European car buyers,
+                                such as
+                                electric windows, air conditioning and even "doors that buzz when open."</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- Modal Window 5 -->
+                <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel5">De Tomaso Pantera Interior</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/Pantera_Interior.JPG" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+ <!-- Modal Trigger 6 -->
+ <div class="col-md-4">
+        <figure>
+            <img src="images/De-Tomaso-Pantera-Si-Targa.jpg" class="myImgs  img-fluid img-thumbnail"
+                data-toggle="modal" data-target="#myModal6">
+            <figcaption>
+                <p class="paraBlack">The Pantera was reesigned for the 1990 model year as the 90 Si.
+                    The supply
+                    of Ford 351 V8's had been exhausted and De Tomaso opted for a Ford 302 V8 as the
+                    replacement. Ultimately, only 38 of the 90 Si models were sold when production
+                    ended in
+                    1993.</p>
+            </figcaption>
+        </figure>
+    </div>
+<!-- Modal Window 6 -->
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6"
+aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel6">De Tomaso Pantera 90 Si</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <img src="images/De-Tomaso-Pantera-Si-Targa.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+</div>
+</div> <!--Second row end-->
+
+<!--------------------------------------- About section ends here ----------------------------------->
+
+<!------------------------------------------- Carousel starts here -------------------------------------------->
             <div id="myCarousel" class="container" style="padding-top:104px;">
                 <h1 class="display-2">Gallery</h1>
                 <div class="row">
@@ -618,17 +435,17 @@ margin-bottom: 15px;
                     </div>
                 </div>
             </div>
-            <!---------------------------------------------- Carousel ends here -------------------------------------------->
+<!---------------------------------------------- Carousel ends here -------------------------------------------->
 
-            <!---------------------------------------- Footer -------------------------------------------->
+<!---------------------------------------- Footer -------------------------------------------->
 
             <footer id="footer">
                 <p class="h4 container" id="copy">&copy Dave Schaaf</p>
             </footer>
 
-            <!------------------------------------Content ends here----------------------------------------------------------->
+<!------------------------------------Content ends here----------------------------------------------------------->
 
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
                 integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -655,30 +472,7 @@ margin-bottom: 15px;
                 /*Preloader End*/
             </script>
             <script src="js/script.js"></script>
-            
-            <!-- Modal script   -->
-            <script>
-                // Get the modal
-                var modal = document.getElementById("myModal");
-                
-                // Get the image and insert it inside the modal - use its "alt" text as a caption
-                var img = document.getElementById("myImg");
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                img.onclick = function(){
-                  modal.style.display = "block";
-                  modalImg.src = this.src;
-                  
-                }
-                
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-                
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() { 
-                  modal.style.display = "none";
-                }
-                </script>
+
 </body>
 
 </html>

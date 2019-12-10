@@ -1,6 +1,4 @@
 body {
-  /* background: #000; */
-  /* color: #fff; */
   position: relative;
   background: #e2ebea;
   margin: 0;
@@ -88,11 +86,6 @@ body {
           box-shadow: 0px 5px #e2ebea inset;
 }
 
-/* #navigation:before {
-   
-    border-top: 16px solid white;
-    background-clip: content-box;
-  } */
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(226, 235, 234, 0.5);
 }
@@ -142,31 +135,14 @@ a.nav-link {
   width: 100%;
 }
 
-/* #myjumbotron {
-      top: 100px;
-      position: relative;
-      background: rgba(0,0,255,1) url(/images/rome.jpg);
-      height: 520px;
-      width: 100%;
-      padding: 2em;
-      background-size: cover;
-      border-radius: 1.15rem;
-      border: 0.3em solid #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  } */
 /*********************** Dark mode switch start ************************/
 img.inner-switch {
-  /* display: inline-block; */
   cursor: pointer;
-  /* border: 2px solid #1e1c21; */
   border-radius: 1rem;
   width: 3.75rem;
   text-align: center;
   font-size: 1rem;
   padding: 0.1875rem;
-  /* margin-left: 0.3125rem; */
   margin-left: .75rem;
   background: #1e1c21;
   border: 0.125em solid #e2ebea;
@@ -183,8 +159,6 @@ img.inner-switch {
 /********************************** Logo start *****************************/
 .logo {
   position: relative;
-  /* width: 100%; */
-  /* right: 200px; */
   right: 34%;
 }
 
@@ -224,7 +198,7 @@ img#car {
   overflow: hidden;
 }
 
-/* Left color block */
+/***** Left color block ******/
 #webpage #leftcolor {
   margin: auto;
   position: absolute;
@@ -250,7 +224,7 @@ img#car {
   z-index: 4;
 }
 
-/* Right color block */
+/****** Right color block *******/
 #webpage #rightcolor {
   margin: auto auto auto 50px;
   position: absolute;
@@ -267,7 +241,7 @@ img#car {
   z-index: 3;
 }
 
-/* Car */
+/******* Car *********/
 #webpage #rightcolor #car {
   margin: auto;
   position: absolute;
@@ -324,24 +298,8 @@ img#car {
 }
 
 /********************************** Logo end *****************************/
-/* .myImgs {
-      filter: grayscale(100%);
-      transition: filter 2s;
-  }
-  
-  .myImgs:hover {
-      filter: none;
-  
-  } */
-/* .container {
-      margin-top: 180px;
-  } */
 figcaption {
   margin: 1em 0.3em;
-}
-
-.paraBlack {
-  color: #000;
 }
 
 section#card-section {
@@ -367,12 +325,6 @@ section#card-section {
   padding-top: 20px;
 }
 
-/* h5 {
-       color: #000;
-   }*/
-/* .carousel-indicators li {
-       opacity: 0.8;
-   }  */
 .carousel-control-next,
 .carousel-control-prev {
   opacity: 1;
@@ -391,7 +343,8 @@ section#card-section {
   background: initial;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   height: 50px;
   width: 30px;
 }

@@ -1,396 +1,320 @@
 body {
-    /* background: #000; */
-    /* color: #fff; */
-    position: relative;
-    background: #e2ebea;
-    margin: 0;
-  }
-  
-   /************************** Preloader start ************************************/
-   /* Center the loader */
-   #loader {
-    position: absolute;
-    left: 40%;
-    top: 10%;
-    z-index: 1;
-    margin: 100px 0 0 -125px;
-    background: url("../images/wheelXL.png");
-    width: 512px;
-    height: 512px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 1.5s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-  
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /************************** Preloader end ************************************/
-  
-  /***************** After preloader animation start ***************************/
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1.5s;
-    animation-name: animatebottom;
-    animation-duration: 1.5s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from {
-      bottom: -200px;
-      opacity: 0
-    }
-  
-    to {
-      bottom: 0px;
-      opacity: 1
-    }
-  }
-  
-  @keyframes animatebottom {
-    from {
-      bottom: -200px;
-      opacity: 0
-    }
-  
-    to {
-      bottom: 0;
-      opacity: 1
-    }
-  }
-  /***************** After preloader animation end ***************************/
-  
-  .myImgs {
-    cursor: pointer;
-  }
-  
-  #navigation {
-    background: #b65027;
-    border-bottom: 5px solid #e2ebea;
-    outline: 8px solid #7b8284;
-    padding-top: 20px;
-    border-top: 8px solid #7b8284;
-    box-shadow: 0px 5px #e2ebea inset;
-  }
-  
-  /* #navigation:before {
-   
-    border-top: 16px solid white;
-    background-clip: content-box;
-  } */
-  
-  .navbar-dark .navbar-nav .nav-link {
-    color: rgba(226, 235, 234, 0.5);
-  }
-  
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(226, 235, 234, 0.8);
-  }
-  
-  ul {
-    margin-left: 7%;
-  }
-  
-  li.nav-item {
-    background: #b65027;
-  }
-  
-  a.nav-link {
-    background: #b65027;
-  }
-  
-  ul.navbar-nav {
-    background: #b65027;
-  }
-  
-  li.nav-item {
-    background: #b65027;
-  }
-  
-  a.nav-link {
-    background: #b65027;
-  }
-  
-  #footer {
-    background: #b65027;
-    border-bottom: 10px solid #7b8284;
-    border-top: 10px solid #7b8284;
-    color: #e2ebea;
-    padding: 15px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    // margin-left: -225px;
-    // width: 124.75%;
-    // width: 140%;
-    // width: 100vw;
-  }
-  
-  #copy {
-    background: #b65027;
-    width: 100%;
+  position: relative;
+  background: #e2ebea;
+  margin: 0;
+}
+
+/************************** Preloader start ************************************/
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  z-index: 1;
+  margin: 100px 0 0 -125px;
+  background: url("../images/wheelXL.png");
+  width: 512px;
+  height: 512px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
   }
 
-  /* #myjumbotron {
-      top: 100px;
-      position: relative;
-      background: rgba(0,0,255,1) url(/images/rome.jpg);
-      height: 520px;
-      width: 100%;
-      padding: 2em;
-      background-size: cover;
-      border-radius: 1.15rem;
-      border: 0.3em solid #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  } */
-  
-  /*********************** Dark mode switch start ************************/
-  //  .switch {
-  //     align-self: flex-end;
-  //     margin: 0.9375rem;
-  //     width: 200px;
-  //     float: right;
-  //   } 
-  
-  img.inner-switch {
-    /* display: inline-block; */
-    cursor: pointer;
-    /* border: 2px solid #1e1c21; */
-    border-radius: 1rem;
-    width: 3.75rem;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.1875rem;
-    /* margin-left: 0.3125rem; */
-    margin-left: .75rem;
-    background: #1e1c21;
-    border: 0.125em solid #e2ebea;
+  100% {
+    -webkit-transform: rotate(360deg);
   }
-  
-  /*********************** Dark mode switch end ************************/
-  
-  .dark,
-  .dark * {
-    background-color: #1e1c21;
-    color: #e2ebea;
-    border-color: #e2ebea;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  /********************************** Logo start *****************************/
-  .logo {
-    position: relative;
-    /* width: 100%; */
-    /* right: 200px; */
-    right: 34%;
+
+  100% {
+    transform: rotate(360deg);
   }
-  
-  h1.display-2 {
-    left: 30%;
+}
+
+/************************** Preloader end ************************************/
+
+/***************** After preloader animation start ***************************/
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -200px;
+    opacity: 0
   }
-  
-  img#car {
-    width: 50%;
-    height: auto;
-    position: relative;
-    left: 40%;
-    bottom: 180px;
+
+  to {
+    bottom: 0px;
+    opacity: 1
   }
-  
-  .car {
-    animation: rightin 3s ease-in-out;
-    z-index: 3;
-    height: 80px;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -200px;
+    opacity: 0
   }
-  
-  #webpage {
-    margin: auto;
-    position: relative;
+
+  to {
     bottom: 0;
-    left: 3%;
-    top: 20px;
-    right: 0;
-    height: 300px;
-    width: 250px;
-    background-color: #fff;
-    border: 10px solid #1e1c21;
-    box-shadow: 3px 3px 10px #666, 6px 6px 10px #444;
-    border-radius: 2.5rem;
-    overflow: hidden;
+    opacity: 1
   }
-  
-  /* Left color block */
-  #webpage #leftcolor {
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    left: -580px;
-    height: 360px;
-    width: 500px;
-    border-radius: 0 0 0 0;
-    background-color: #37a2e0;
-    animation: leftin 3s ease-in-out;
-    z-index: 3;
+}
+
+/***************** After preloader animation end ***************************/
+
+.myImgs {
+  cursor: pointer;
+}
+
+#navigation {
+  background: #b65027;
+  border-bottom: 5px solid #e2ebea;
+  outline: 8px solid #7b8284;
+  padding-top: 20px;
+  border-top: 8px solid #7b8284;
+  box-shadow: 0px 5px #e2ebea inset;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(226, 235, 234, 0.5);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(226, 235, 234, 0.8);
+}
+
+ul {
+  margin-left: 7%;
+}
+
+li.nav-item {
+  background: #b65027;
+}
+
+a.nav-link {
+  background: #b65027;
+}
+
+ul.navbar-nav {
+  background: #b65027;
+}
+
+li.nav-item {
+  background: #b65027;
+}
+
+a.nav-link {
+  background: #b65027;
+}
+
+#footer {
+  background: #b65027;
+  border-bottom: 10px solid #7b8284;
+  border-top: 10px solid #7b8284;
+  color: #e2ebea;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#copy {
+  background: #b65027;
+  width: 100%;
+}
+
+/*********************** Dark mode switch start ************************/
+
+img.inner-switch {
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 3.75rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.1875rem;
+  margin-left: .75rem;
+  background: #1e1c21;
+  border: 0.125em solid #e2ebea;
+}
+
+/*********************** Dark mode switch end ************************/
+
+.dark,
+.dark * {
+  background-color: #1e1c21;
+  color: #e2ebea;
+  border-color: #e2ebea;
+}
+
+/********************************** Logo start *****************************/
+.logo {
+  position: relative;
+  right: 34%;
+}
+
+h1.display-2 {
+  left: 30%;
+}
+
+img#car {
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: 40%;
+  bottom: 180px;
+}
+
+.car {
+  animation: rightin 3s ease-in-out;
+  z-index: 3;
+  height: 80px;
+}
+
+#webpage {
+  margin: auto;
+  position: relative;
+  bottom: 0;
+  left: 3%;
+  top: 20px;
+  right: 0;
+  height: 300px;
+  width: 250px;
+  background-color: #fff;
+  border: 10px solid #1e1c21;
+  box-shadow: 3px 3px 10px #666, 6px 6px 10px #444;
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+
+/***** Left color block ******/
+#webpage #leftcolor {
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  left: -580px;
+  height: 360px;
+  width: 500px;
+  border-radius: 0 0 0 0;
+  background-color: #37a2e0;
+  animation: leftin 3s ease-in-out;
+  z-index: 3;
+}
+
+#t-logo {
+  position: absolute;
+  left: 80px;
+  top: 90px;
+  width: 80px;
+  z-index: 4;
+}
+
+/****** Right color block *******/
+#webpage #rightcolor {
+  margin: auto auto auto 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  top: 0;
+  right: 0;
+  left: 111px;
+  height: 360px;
+  width: 300px;
+  background-color: #37a2e0;
+  animation: rightin 3s ease-in-out;
+  z-index: 3;
+}
+
+/******* Car *********/
+#webpage #rightcolor #car {
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: -380px;
+  width: 350px;
+  height: auto;
+  z-index: 10;
+}
+
+@keyframes leftin {
+  from {
+    transform: translateX(-1000px);
   }
-  
-  #t-logo {
-    position: absolute;
-    left: 80px;
-    top: 90px;
-    width: 80px;
-    z-index: 4;
+
+  to {
+    transform: translateY(0px);
   }
-  
-  /* Right color block */
-  #webpage #rightcolor {
-    margin: auto auto auto 50px;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    top: 0;
-    right: 0;
-    left: 111px;
-    height: 360px;
-    width: 300px;
-    background-color: #37a2e0;
-    animation: rightin 3s ease-in-out;
-    z-index: 3;
+}
+
+@keyframes rightin {
+  from {
+    transform: translateX(1000px);
   }
-  
-  /* Car */
-  #webpage #rightcolor #car {
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: -380px;
-    width: 350px;
-    height: auto;
-    z-index: 10;
+
+  to {
+    transform: translateX(0px);
   }
-  
-  @keyframes leftin {
-    from {
-      transform: translateX(-1000px);
-    }
-  
-    to {
-      transform: translateY(0px);
-    }
-  }
-  
-  @keyframes rightin {
-    from {
-      transform: translateX(1000px);
-    }
-  
-    to {
-      transform: translateX(0px);
-    }
-  }
-  
-  /********************************** Logo end *****************************/
-  
-  // .ui-tooltip {
-  //   background: black;
-  //   border: 5px solid white;
-  // }
-  
-  // .ui-tooltip {
-  //   padding: 10px 20px;
-  //   color: white;
-  //   border-radius: 10px;
-  //   font: bold 14px "Helvetica Neue", Sans-Serif;
-  //   text-transform: uppercase;
-  //   box-shadow: 0 0 7px black;
-  // }
-  
-  /* .myImgs {
-      filter: grayscale(100%);
-      transition: filter 2s;
-  }
-  
-  .myImgs:hover {
-      filter: none;
-  
-  } */
-  
-  /* .container {
-      margin-top: 180px;
-  } */
-  
-  figcaption {
-    margin: 1em 0.3em;
-  }
-  
-  .paraBlack {
-    color: #000;
-  }
-  
-  section#card-section {
-    color: #fff;
-  }
-  
-  .rect {
-    margin: 3em 0;
-  }
-  
-  .card-parent-div {
-    background-image: -webkit-linear-gradient(#67b5fa, #D7F0FF);
-    background-image: -moz-linear-gradient(#67b5fa, #D7F0FF);
-    background-image: -o-linear-gradient(#67b5fa, #D7F0FF);
-    background-image: linear-gradient(#67b5fa, #D7F0FF);
-  }
-  
-  #myModalLabel1,
-  #myModalLabel2,
-  #myModalLabel3 {
-    color: #000;
-  }
-  
-  #myCarousel {
-    padding-top: 20px;
-  }
-  
-  /* h5 {
-       color: #000;
-   }*/
-  
-  /* .carousel-indicators li {
-       opacity: 0.8;
-   }  */
-  
-  .carousel-control-next,
-  .carousel-control-prev {
-    opacity: 1;
-    background: initial;
-  }
+}
+
+/********************************** Logo end *****************************/
+
+figcaption {
+  margin: 1em 0.3em;
+}
+
+section#card-section {
+  color: #fff;
+}
+
+.rect {
+  margin: 3em 0;
+}
+
+.card-parent-div {
+  background-image: -webkit-linear-gradient(#67b5fa, #D7F0FF);
+  background-image: -moz-linear-gradient(#67b5fa, #D7F0FF);
+  background-image: -o-linear-gradient(#67b5fa, #D7F0FF);
+  background-image: linear-gradient(#67b5fa, #D7F0FF);
+}
+
+#myModalLabel1,
+#myModalLabel2,
+#myModalLabel3 {
+  color: #000;
+}
+
+#myCarousel {
+  padding-top: 20px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+  background: initial;
+}
 
 .carousel-caption {
   background: initial;
 }
+
 .carousel-caption h5 {
   background: initial;
 }
@@ -399,29 +323,29 @@ body {
   background: initial;
 }
 
-  .carousel-control-next-icon, .carousel-control-prev-icon  {
-    height: 50px;
-    width: 30px;
-    // background: initial;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 50px;
+  width: 30px;
+}
+
+@media screen and (max-width:320px) {
+  .display-1 {
+    font-size: 2.50rem;
   }
-  
-  @media screen and (max-width:320px) {
-    .display-1 {
-      font-size: 2.50rem;
-    }
-  
+
+}
+
+@media screen and (min-width:321px) and (max-width:768px) {
+  .display-1 {
+    font-size: 2.75rem;
   }
-  
-  @media screen and (min-width:321px) and (max-width:768px) {
-    .display-1 {
-      font-size: 2.75rem;
-    }
-  
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  .display-1 {
+    font-size: 5.25rem;
   }
-  
-  @media screen and (min-width:769px) and (max-width:992px) {
-    .display-1 {
-      font-size: 5.25rem;
-    }
-  
-  }
+
+}
