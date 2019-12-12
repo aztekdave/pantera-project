@@ -253,6 +253,27 @@ img#car {
   z-index: 10;
 }
 
+.link {
+  margin: 15px 0 50px 0;
+}
+
+.wiki {
+  font-size: 1.25em;
+  font-weight: 700;
+  background: #b65027;
+  color: #e2ebea;
+  padding: 10px;
+  margin: 10px;
+  border: solid 5px #7b8284;
+  border-radius: 15px;
+}
+
+.wiki:hover {
+  color: #b65027;
+  text-decoration: none;
+  background-color: #e2ebea;
+}
+
 @-webkit-keyframes leftin {
   from {
     -webkit-transform: translateX(-1000px);
