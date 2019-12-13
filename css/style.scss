@@ -123,13 +123,15 @@ a.nav-link {
 
 #footer {
   background: #b65027;
-  border-bottom: 10px solid #7b8284;
-  border-top: 10px solid #7b8284;
+  border-bottom: 5px solid #e2ebea;
+  outline: 8px solid #7b8284;
+  box-shadow: 0px 5px #e2ebea inset;
   color: #e2ebea;
   padding: 15px;
   position: absolute;
   left: 0;
   right: 0;
+  margin-bottom: 8px;
   width: 100%;
 }
 
